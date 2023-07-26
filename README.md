@@ -26,7 +26,3 @@ Upon execution, the program will:
 1. Read the CIDs from the CSV.
 2. For each CID, fetch its metadata from the IPFS gateway.
 3. Save the metadata to the DynamoDB table.
-
-## License
-
-This project can be licensed under the license you choose. Ensure to add a LICENSE file if you intend to distribute or open-source this project.
