@@ -67,7 +67,7 @@ func fetchMetadataFromCID(cid string) (*Metadata, error) {
 		return &metadata, nil
 	}
 
-	// Return nil metadata after all attempts fail.
+
 	return nil, nil
 
 }
@@ -98,15 +98,13 @@ func fetchMetadataFromCID(cid string) (*Metadata, error) {
 
 
 func putItemToDynamoDB(item *Metadata) error {
-	// Using the SDK's default configuration, loading additional config
-	// and credentials values from the environment variables, shared
-	// credentials, and shared configuration files
+	
 	cfg, err := config.LoadDefaultConfig(context.TODO(), config.WithRegion("us-east-1"))
 	if err != nil {
 		log.Fatalf("unable to load SDK config, %v", err)
 	}
 
-	// Using the Config value, create the DynamoDB client
+	
 	svc := dynamodb.NewFromConfig(cfg)
 
 	av, err := attributevalue.MarshalMap(item)
