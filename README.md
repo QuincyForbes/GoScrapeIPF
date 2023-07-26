@@ -30,3 +30,8 @@ Upon execution, the program will:
 
 ## Results
 ![image](https://github.com/QuincyForbes/GoScrapeIPF/assets/74159902/e4428f02-6df9-49d6-a0ff-cac3a0e87cb8)
+## Contributing
+
+If you'd like to contribute to this project, please fork the repository and submit a pull request.
+
+
