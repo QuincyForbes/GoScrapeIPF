@@ -15,17 +15,18 @@ This project fetches metadata from IPFS CIDs and saves them to an AWS DynamoDB t
 - **IPFS Gateway**: This project specifically uses `https://blockpartyplatform.mypinata.cloud/ipfs/` as its default IPFS gateway. You can modify it in the code if you use a different gateway.
 - **CSV with CIDs**: A CSV file named "ipfs_cids.csv" containing a list of CIDs to be processed.
 
+
+## Installation
+
+1. Clone the repository to your local machine.
+3. Run `go mod download` to download the project dependencies.
+4. Set up your AWS credentials by running `aws configure`.
+5. Create a DynamoDB table or update the code to support yours.
+
+
 ## Usage
-
-1. Ensure you have a file named `ipfs_cids.csv` in the same directory as the program. This CSV should contain CIDs, one per line.
-2. Run the program:
-   `go run main.go`
-
-Upon execution, the program will:
-
-1. Read the CIDs from the CSV.
-2. For each CID, fetch its metadata from the IPFS gateway.
-3. Save the metadata to the DynamoDB table.
+Run the program:
+   ```go run main.go```
 
 
 ## Results
