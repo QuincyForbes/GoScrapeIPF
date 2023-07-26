@@ -26,3 +26,7 @@ Upon execution, the program will:
 1. Read the CIDs from the CSV.
 2. For each CID, fetch its metadata from the IPFS gateway.
 3. Save the metadata to the DynamoDB table.
+
+
+## Results
+![image](https://github.com/QuincyForbes/GoScrapeIPF/assets/74159902/e4428f02-6df9-49d6-a0ff-cac3a0e87cb8)
